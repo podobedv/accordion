@@ -1,0 +1,114 @@
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<script type="text/javascript" src="script.js"></script>
+		<link rel="stylesheet" type="text/css" href="styles.css"/> 
+	</head>
+	<body>
+		<title>Books</title>
+		<div>
+			<h1>Favorite books</h1>
+		</div>
+		<br/>
+		<marquee>
+			<p>
+				<h3>“Be yourself; everyone else is already taken.” ― Oscar Wilde</h3>
+			</p>	
+		</marquee>
+		<br/>
+		<br/>
+		<div class="container">
+			<ul>				
+				<div class="header" onClick="headerClick(this)">Art<span class="number">0/4</span></div>
+				<ul class="list hidden">
+					<div class="inner">
+						<li>
+							<input class="book" type="checkbox" id="book1" onchange="addBook(this)"/>
+							<img class="list-image" src="1.jpg"/>
+							The Warner Loughlin Technique: An Acting Revolution by Warner Loughlin 
+						</li>
+						<li>
+							<input class="book" type="checkbox" id="book2" onchange="addBook(this)"/>
+							<img class="list-image" src="2.jpg"/>
+							Beginner Pole Dancing: For Fitness and Fun by Danni Peck 
+						</li>
+						<li>
+							<input class="book" type="checkbox" id="book3" onchange="addBook(this)"/>
+							<img class="list-image" src="3.jpg"/>
+							American Architectural Restoration: What Tales are Told by the Buildings Around Us by James Oermann
+						</li>
+						<li>
+							<input class="book" type="checkbox" id="book4" onchange="addBook(this)"/>
+							<img class="list-image" src="4.jpg"/>
+							I'll Give You the Sun by Jandy Nelson
+						</li>
+						<button onclick="nextHeader(this)">Järgmine teema</button>
+					</div>
+				</ul>
+				<div class="header middle" onClick="headerClick(this)">Classics<span class="number">0/4</span>
+				</div>
+				<ul class="list hidden">
+					<div class="inner">
+						<li>
+							<input class="book" type="checkbox" id="book5" onchange="addBook(this)"/>
+							<img class="list-image" src="5.jpg"/>
+							Sherlock Holmes: The Ultimate Collection (Sherlock Holmes) by Arthur Conan Doyle
+						</li>
+						<li>
+							<input class="book" type="checkbox" id="book6" onchange="addBook(this)"/>
+							<img class="list-image" src="6.jpg"/>
+							The Madness of Cambyses by Herodotus
+						</li>
+						<li>
+							<input class="book" type="checkbox" id="book7" onchange="addBook(this)"/>
+							<img class="list-image" src="7.jpg"/>
+							The Art of War and Other Classics of Eastern Thought by Sun Tzu, Lao Tzu, Confucius
+						</li>
+						<li>
+							<input class="book" type="checkbox" id="book8" onchange="addBook(this)"/>
+							<img class="list-image" src="8.jpg"/>
+							Fahrenheit 451 by Ray Bradbury, Alfredo Crespo
+						</li>
+						<button onclick="nextHeader(this)">Järgmine teema</button>		
+					</div>						
+				</ul>
+				<div class="header" onClick="headerClick(this)">Physics<span class="number">0/4</span>
+				</div>
+				<ul class="list hidden">
+					<div class="inner">
+						<li>
+							<input class="book" type="checkbox" id="book9" onchange="addBook(this)"/>
+							<img class="list-image" src="9.jpg"/>
+							Happiness Is a Choice You Make: Lessons from a Year Among the Oldest Old by John Leland
+						</li>
+						<li>
+							<input class="book" type="checkbox" id="book10" onchange="addBook(this)"/>
+							<img class="list-image" src="10.jpg"/>
+							Enlightenment Now: The Case for Reason, Science, Humanism, and Progress by Steven Pinker
+						</li>
+						<li>
+							<input class="book" type="checkbox" id="book11" onchange="addBook(this)"/>
+							<img class="list-image" src="11.jpg"/>
+							When: The Scientific Secrets of Perfect Timing by Daniel H. Pink
+						</li>
+						<li>
+							<input class="book" type="checkbox" id="book12" onchange="addBook(this)"/>
+							<img class="list-image" src="12.jpg"/>
+							The Future of Humanity: Terraforming Mars, Interstellar Travel, Immortality, and Our Destiny Beyond by Michio Kaku
+						</li>	
+					</div>
+				</ul>
+				<button class="button-ready" disabled>Valmis!</button>
+				<br/>
+				<a class="info-link" onclick="showInfo()">Tutvu kampaania tingimustega</a>
+				<div class="info hidden">Kampaania tingimused<span onclick="closeInfo(this)">X</span></div>
+			</ul>
+		</div>
+		<br/>
+		<br/>
+		<br/>
+		<footer>
+			<h5>&copy; Vladimir Podobed. Kõik õigused on kaitstud.</h5>
+		</footer>
+	</body>
+</html>

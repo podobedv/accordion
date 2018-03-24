@@ -1,0 +1,140 @@
+body {
+	background-image: url("fon.png");
+	background-repeat: no-repeat;
+	font-family: Tahoma;
+}
+
+.list-image{
+	width: 20px;
+}
+
+.list{
+	max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.15s ease-out;
+	font-size: 12px;
+	padding-left: 0px;
+	list-style-type: none;
+}
+
+.list .inner{
+	margin-top: 2px;
+}
+
+.list li{
+	font-size: 12px;
+	padding-left: 10px;
+}
+
+li.selected{
+	background-color: #FFFFE0;
+}
+
+h1{
+	display: block;
+    font-size: 2em;
+	margin-top: 0.67em;
+    margin-bottom: 0.67em;
+	text-align: center;
+	color: black;
+	font-stretch: semi-expanded;
+	font-weight: normal;
+}
+
+h3{
+	text-align: center;
+	color: #000000;
+	font-weight: normal;
+}
+
+h5{
+	display: block;
+	text-align: center;
+	color: #000000;
+	font-weight: normal;
+}
+
+.header {
+    padding: 10px;
+    font-size: 14px;
+	border-bottom: 1px solid #FFE87C;
+	border-top: 1px solid #FFE87C;
+	cursor: pointer;
+}
+
+.header.middle {
+    margin-top: -1px;
+	margin-bottom: -1px;
+}
+
+.container {
+    width: 60%;
+    margin: 0px auto;
+    border: 1px solid white;
+    background: white;
+}
+
+.number {
+	float: right;
+    text-align: center;
+	font-size: 12px;
+}
+
+.info {
+	position: absolute;
+    top: 30%;
+    left: 40%;
+    border-radius: 5px;
+    border: 1px solid;
+    height: 200px;
+    width: 300px;
+    background-color: lightyellow;
+    padding: 15px;
+	font-size: 14px;
+}
+.info.hidden {
+	display:none;
+}
+
+.info-link{
+	font-size: 10px;
+    text-decoration: underline;
+    color: darkgoldenrod;
+    cursor: pointer;
+}
+
+.info span {
+	float: right;
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 0px 5px 0px 5px;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: -10px;
+    margin-right: -10px;
+	cursor: pointer;
+}
+
+button {
+	width: 25%;
+    margin: 20px auto 0px;
+    padding: 10px;
+	display: block;
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+    background-color: #8B0000;
+    border: 1px solid #B0C4DE;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+button:disabled {
+    background-color: gray;
+	color: lightgray;
+}
+
+
+
+
